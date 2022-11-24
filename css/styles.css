@@ -311,7 +311,7 @@ margin-left: 50px;
 
 /* Особливості  */
 
- .desc{
+ .desc-list{
     display: flex;
     gap: 30px;
 }
@@ -357,8 +357,7 @@ margin-left: 50px;
     fill: var(--title-text-color);
 }
 
-.images .list, 
-.team .list{
+.images-list{
     display: flex;
     gap: 30px;
 }
@@ -367,6 +366,11 @@ margin-left: 50px;
 
 .team{
     background: #F5F4FA;
+}
+
+.team-list {
+    display: flex;
+    gap: 30px;
 }
 
 .team .text{
@@ -423,7 +427,7 @@ margin-left: 50px;
 
 /* Постійні клієнти */
 
-.company .list{
+.company-list{
     gap: 30px;
     display: flex;
     justify-content: center;
