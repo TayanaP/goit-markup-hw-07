@@ -55,6 +55,7 @@ img{
 /* Header */
 
 /* Logo */
+
 .header{
     border-bottom: 1px solid #ECECEC;
 }
@@ -84,26 +85,26 @@ img{
 
 /* Navigation */
 
-.container.wrap{
-    display: flex;
-    align-items: center;
-}
-
-.mein-nav{
+.header__container{
     display: flex;
     align-items: center;
 }
 
 .nav{
-    display: flex; 
-    gap: 50px; 
+    display: flex;
+    align-items: center;
 }
 
-.nav-item{
+.nav__list{
+    display: flex; 
+    gap: 50px; 
+} 
+
+.nav__item{
     position: relative;
 }
 
-.nav-link{
+.nav__link{
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -119,12 +120,12 @@ img{
     transition: color var(--animation);
     }
 
-.nav-link:hover,
-.nav-link:focus{
+.nav__link:hover,
+.nav__link:focus{
     color: var(--text-accent);
 }
 
-.nav-link.current{
+.nav__link.current{
     color: var(--text-accent);
 }
 
@@ -148,11 +149,11 @@ img{
   gap: 50px;
 }
 
-.address-item + .item{
+.address__item + .item{
 margin-left: 50px;
 }
 
-.address-link{
+.address__link{
     display: flex;
     align-items: center;
     gap: 10px;
@@ -168,12 +169,12 @@ margin-left: 50px;
     transition: color var(--animation);
 }
 
-.address-link:hover,
-.address-link:focus{
+.address__link:hover,
+.address__link:focus{
     color: var(--text-accent);
 }
 
-.address-icon{
+.address__icon{
     fill: currentColor;
 }
 
@@ -199,7 +200,7 @@ margin-left: 50px;
         url(../images/team.jpg);
     }
 
-.hero-title{
+.hero__title{
     margin-bottom: 30px;
 
     font-weight: 900;
@@ -212,7 +213,7 @@ margin-left: 50px;
     color: var(--secondary-color);
 }
 
-.button{
+.hero__button{
     padding: 10px 32px;
     border-radius: 4px;
 
@@ -231,8 +232,8 @@ margin-left: 50px;
     transition: background-color var(--animation);
 }
 
-.button:hover,
-.button:focus{
+.hero__button:hover,
+.hero__button:focus{
     background-color: #188CE8;
     color: var(--secondary-color);
 }
