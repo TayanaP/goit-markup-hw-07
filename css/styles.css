@@ -143,17 +143,17 @@ img{
    background: var(--text-accent);
 }
 
-.address{
+.header-address__list{
  display: flex;
   margin-left: auto;
   gap: 50px;
 }
 
-.address__item + .item{
+.header-address__item + .item{
 margin-left: 50px;
 }
 
-.address__link{
+.header-address__link{
     display: flex;
     align-items: center;
     gap: 10px;
@@ -169,12 +169,12 @@ margin-left: 50px;
     transition: color var(--animation);
 }
 
-.address__link:hover,
-.address__link:focus{
+.header-address__link:hover,
+.header-address__link:focus{
     color: var(--text-accent);
 }
 
-.address__icon{
+.header-address__icon{
     fill: currentColor;
 }
 
@@ -495,7 +495,7 @@ margin-left: 50px;
     background: #2F303A;
 }
 
-.footer .container{
+.footer__container{
     display: flex;
 }
 
@@ -514,7 +514,11 @@ margin-left: 50px;
     margin-right: 0;
 }
 
-.footer .text{
+.footer-address__desc{
+    margin-top: 20px;
+}
+
+.footer-address__text{
     margin-bottom: 9px;
 
     font-size: 14px;
@@ -524,12 +528,19 @@ margin-left: 50px;
     color: var(--secondary-color);
 }
 
-.footer-address{
+.footer-address__list{
     display: block; 
+}
+
+.footer-address__item{
+    margin-top: 9px;
+}
+
+.footer-address__item:not(:last-child){
     margin-bottom: 9px;
 }
 
-.footer-address .link{ 
+.footer-address__link{ 
     text-decoration: none;
     font-style: normal;
 
@@ -538,25 +549,20 @@ margin-left: 50px;
     transition: color var(--animation);
 }
 
-.footer-address .link:hover,
-.footer-address .link:focus{
+.footer-address__link:hover,
+.footer-address__link:focus{
     color: var(--text-accent);
 }
 
-.footer-address .item:not(:last-child){
-    margin-bottom: 9px;
+.navigation{
+    display: inline-block;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 70px;
 }
 
-.address-items{
-    margin-top: 20px;
-}
-
-.footer-address .item{
-    margin-top: 9px;
-}
-
-.footer-title,
-.form-field .title{
+.navigation__title{
     margin-bottom: 20px;
     font-style: normal;
     font-weight: 700;
@@ -569,15 +575,16 @@ margin-left: 50px;
     color: var(--secondary-color);
     }
 
-.navigation{
-    gap: 10px;
+.navigation__list{
+    display: flex;
     align-items: center;
-    display: inline-block;
     justify-content: center;
-    margin-left: 70px;
+    margin-right: auto;
+    margin-left: auto;
+    gap: 10px;
 }
 
-.footer-social .link{
+.navigation__link{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -589,21 +596,16 @@ margin-left: 50px;
     transition: background-color var(--animation);
 }
 
-.footer-social .link:hover,
-.footer-social .link:focus{
+.navigation__link:hover,
+.navigation__link:focus{
     background: var(--text-accent);
 }
 
-.footer-social .icon{
+.navigation__icon{
     fill: var(--secondary-color);
 }
 
 .form {
-    display: flex;
-    align-items: center;
-}
-
-.form-field {
     display: inline-block;
     align-items: center;
     justify-content: center;
@@ -612,7 +614,28 @@ margin-left: 50px;
    
 }
 
-.form-field .input {
+.form__title{
+    margin-bottom: 20px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    padding-top: 12px;
+
+    text-transform: uppercase;
+    color: var(--secondary-color);
+    
+}
+
+.form-field{
+    display: flex;
+    align-items: center;
+}
+
+
+
+.form-field__input {
     display: flex;
     align-items: center;
     width: 358px; 
@@ -631,7 +654,7 @@ margin-left: 50px;
     transition: outline-color var(--animation), border var(--animation);
 }
 
-.form-field .input::placeholder {
+.form-field__input::placeholder {
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.03em;
@@ -639,13 +662,13 @@ margin-left: 50px;
     color: rgba(255, 255, 255, 0.6);
 }
 
-.form-field .input:hover,
-.form-field .input:focus {
+.form-field__input:hover,
+.form-field__input:focus {
     border: 1px solid var(--text-accent);
     outline-color: var(--text-accent);
 }
 
-.send-button {
+.form-field__button{
     /* position: relative; */
     display: flex;
     align-items: center;
@@ -674,13 +697,12 @@ margin-left: 50px;
     transition: background-color var(--animation);
 }
 
-.send-button .icon {
+.form-field__icon {
     fill: #FFFFFF;
 }
 
-
-.send-button:hover,
-.send-button:focus {
+.form-field__button:hover,
+.form-field__button:focus {
     background-color: #188CE8;
     color: var(--secondary-color);
 }
