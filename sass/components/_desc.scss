@@ -1,6 +1,5 @@
-.section{
-    padding-top: 94px;
-    padding-bottom: 94px;
+.desc{
+    @include section (94px, 94px);
 }
 
 .desc__list{

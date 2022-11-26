@@ -2,6 +2,10 @@
     padding-top: 0;
 }
 
+.images {
+    @include section (94px, 94px);
+}
+
 .images__title{
     margin-bottom: 50px;
     text-align: center;
