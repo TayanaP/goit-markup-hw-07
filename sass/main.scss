@@ -1,1 +1,39 @@
-@import './utils/variables.scss';
+@import './utils/variables';
+
+@import './base/base';
+@import './base/-reset';
+
+@import './components/container';
+@import './components/section';
+@import './components/header';
+@import './components/header-logo';
+@import './components/nav';
+@import './components/header-address';
+@import './components/hero';
+@import './components/desc';
+@import './components/images';
+@import './components/team';
+@import './components/company';
+@import './components/footer';
+@import './components/footer-logo';
+@import './components/footer-address';
+@import './components/navigation';
+@import './components/form';
+@import './components/backdrop';
+@import './components/modal';
+@import './components/modal__button';
+@import './components/modal__label';
+@import './components/modal__form';
+@import './components/modal-form__button';
+@import './components/button-list';
+
+
+
+
+
+
+
+
+
+
+
