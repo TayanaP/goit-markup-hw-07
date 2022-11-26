@@ -15,7 +15,7 @@
     <header class="header">
         <div class="header__container container">
         <nav class="nav">
-            <a class="logo-link" href="./index.html" >Web<span class="header-logo">Studio</span></a>
+            <a class="header-logo__link" href="./index.html" >Web<span class="header__logo">Studio</span></a>
             <ul class="nav__list list">
                 <li class="nav__item"><a href="./index.html" class="nav__link current marker">Студія</a></li>
                 <li class="na__item"><a href="./portfolio.html" class="nav__link">Портфоліо</a></li>
@@ -307,7 +307,7 @@
     <footer class="footer">
         <div class="footer__container container">
             <div class="footer-address">
-        <a class="logo-link" href="/index.html">Web<span class="footer-logo">Studio</span></a>
+        <a class="footer-logo__link" href="/index.html">Web<span class="footer__logo">Studio</span></a>
         <address class="footer-address__desc">
             <p class="footer-address__text">м. Київ, пр-т Лесі Українки, 26</p>
             <ul class="footer-address__list list">
@@ -364,49 +364,50 @@
 
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button type="button" class="modal-close" data-modal-close>
-                <svg class="icon" width="11" height="11">
+            <button class="modal__button" type="button" data-modal-close>
+                <svg class="modal__icon" width="11" height="11">
                     <use href="./images/symbol-defs2.svg#icon-button"></use>
                 </svg>
             </button>
-            <strong class="modal-header">Залиште свої дані, ми вам передзвонимо</strong>
-            <form class="modal-form" name="modal_form">
-            <div class="modal-form-group" role="group">
+            <strong class="modal__label">Залиште свої дані, ми вам передзвонимо</strong>
+            <form class="modal__form" name="modal_form">
+
+            <div class="modal-form__group" role="group">
                   
-                <div class="modal-form-wrapper">
-                    <label class="modal-form-label" for="user_name" >Ім'я</label> 
-                   <input class="modal-form-field" type="text" name="user_name" id="user_name">
-                <svg class="modal-form-icon" width="18" height="18">
+                <div class="modal-form__wrapper">
+                    <label class="modal-form__label" for="user_name" >Ім'я</label> 
+                   <input class="modal-form__field" type="text" name="user_name" id="user_name">
+                <svg class="modal-form__icon" width="18" height="18">
                     <use href="./images/symbol-defs2.svg#icon-person"></use>
                 </svg>  
             </div>
 
-                <div class="modal-form-wrapper">
-                    <label class="modal-form-label" for="user_phone" >Телефон</label> 
-                    <input class="modal-form-field" type="tel" name="user_phone" id="user_phone">    
-                    <svg class="modal-form-icon" width="18" height="18">
+                <div class="modal-form__wrapper">
+                    <label class="modal-form__label" for="user_phone" >Телефон</label> 
+                    <input class="modal-form__field" type="tel" name="user_phone" id="user_phone">    
+                    <svg class="modal-form__icon" width="18" height="18">
                      <use href="./images/symbol-defs2.svg#icon-phone"></use>
                  </svg>
                  </div>
                    
-                <div class="modal-form-wrapper">
-                    <label class="modal-form-label" for="user_mail" >Пошта</label> 
-                    <input class="modal-form-field" type="text" name="user_mail" id="user_mail">  
-                    <svg class="modal-form-icon" width="18" height="18">
+                <div class="modal-form__wrapper">
+                    <label class="modal-form__label" for="user_mail" >Пошта</label> 
+                    <input class="modal-form__field" type="text" name="user_mail" id="user_mail">  
+                    <svg class="modal-form__icon" width="18" height="18">
                      <use href="./images/symbol-defs2.svg#icon-email"></use>
                  </svg>
                  </div>
-                 <div class="modal-form-wrap">
-                     <label class="modal-form-label" for="user_message">Коментар</label>  
-                     <textarea class="modal-form-message" name="user_message" id="user_message" rows="10" placeholder="Введіть текст"></textarea>
+                 <div class="modal-form__wrap">
+                     <label class="modal-form__label" for="user_message">Коментар</label>  
+                     <textarea class="modal-form__message" name="user_message" id="user_message" rows="10" placeholder="Введіть текст"></textarea>
                 </div>
                 </div>
-                <div class="modal-group-agrement" role="group">
-                    <input class="modal-form-checkbox" type="checkbox" name="user_agrement" id="user_agrement"/>
-                    <span class="checkbox-icon"></span>
-                    <label class="modal-form-agrement" for="user_agrement">Погоджуюся з розсилкою та приймаю <a class="modal-form-conditions" href="">Умови договору</a></label> 
+                <div class="modal-form__agrement" role="group">
+                    <input class="modal-form__checkbox" type="checkbox" name="user_agrement" id="user_agrement"/>
+                    <span class="checkbox__icon"></span>
+                    <label class="modal-form__desc" for="user_agrement">Погоджуюся з розсилкою та приймаю <a class="modal-form__link" href="">Умови договору</a></label> 
                 </div>
-                <button class="modal-form-button" type="submit">Відправити</button>
+                <button class="modal-form__button" type="submit">Відправити</button>
             </form>
         </div>
     </div>
