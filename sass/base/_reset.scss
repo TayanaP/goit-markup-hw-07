@@ -2,7 +2,6 @@ h1,
 h2,
 h3,
 p,
-ul,
 li
 {
     margin: 0;
@@ -11,9 +10,11 @@ li
 
 ul{
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-link{
+.link{
     display: block;
     text-decoration: none;
 }
