@@ -1011,21 +1011,21 @@ fill: var(--text-accent)
     gap: 30px;  
 }
 
-.element{
+.project-list__item{
     position: relative;
     flex-basis: calc((100% - 60px) / 3);  
 }
 
-.element:hover{
+.project-list__item:hover{
     box-shadow: 0px 1px 1px rgb(0 0 0 / 12%), 0px 4px 4px rgb(0 0 0 / 6%), 1px 4px 6px rgb(0 0 0 / 16%);
 }
 
-.element-overlay{
+.project-list__overlay{
     position: relative;
     overflow: hidden;
 }
 
-.project-text{
+.project-list__text{
     /* display: inline-block;
     content: ""; */
     position: absolute;
@@ -1039,11 +1039,11 @@ fill: var(--text-accent)
     transition: transform var(--animation);
 }
 
-.element:hover .project-text{
+.project-list__item:hover .project-list__text{
     transform: translateY(0);
 }
 
-.slogan{
+.project-list__slogan{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1058,7 +1058,7 @@ fill: var(--text-accent)
     color: var(--secondary-color);
 }
 
-.portfolio-title{
+.project-list__title{
     margin-bottom: 4px; 
     font-weight: 700;
     font-size: 18px;
@@ -1068,14 +1068,14 @@ fill: var(--text-accent)
     color: var(--title-text-color);
 }
 
-.portfolio .text{
+.project-list__desc{
     font-size: 16px;
     line-height: 1.88;
 
     color: var(--primary-text-color);
 }
 
-.border{
+.project-list__border{
     padding: 20px 24px;
 
     border: 1px solid #EEEEEE;
