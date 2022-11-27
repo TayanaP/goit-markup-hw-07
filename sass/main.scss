@@ -2,11 +2,11 @@
 @import './utils/placeholders';
 @import './utils/mixins';
 
-@import './base/base';
 @import './base/reset';
+@import './base/base';
 
-@import './components/section';
 @import './components/container';
+@import './components/buttons';
 @import './components/header';
 @import './components/header-logo';
 @import './components/nav';
@@ -23,11 +23,10 @@
 @import './components/form';
 @import './components/backdrop';
 @import './components/modal';
-@import './components/modal__button';
 @import './components/modal__label';
 @import './components/modal__form';
-@import './components/modal-form__button';
-@import './components/button-list';
+@import './components/portfolio__button';
+@import './components/project-list';
 
 
 
